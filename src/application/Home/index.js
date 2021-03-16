@@ -4,7 +4,7 @@ import {Top, Tab, TabItem} from  './style'
 import  {NavLink} from  'react-router-dom'
 export default function Home  (props) {
   const  {route} = props
-  console.log(11111,route)
+ 
   return (
     <div>
       <Top>
