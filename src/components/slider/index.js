@@ -30,7 +30,7 @@ function Slider(props){
               return (
                 <div className="swiper-slide" key={slider.content}>
                   <div className="slider-nav">
-                    <div>1111{slider.name}</div>
+                   
                     <img src={slider.imageUrl} width='100%' height='100%' alt="推荐"/>
                   </div>
                 </div>

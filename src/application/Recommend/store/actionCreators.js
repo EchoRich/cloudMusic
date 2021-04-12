@@ -21,12 +21,18 @@ export const getBannerList = () =>{
     })
   }
 }
+export const changeEnterLoading  = data => ({
+  type:actionTypes.CHANGE_ENTER_LOADING,
+  data
+})
 export const getRecommendList  = () => {
   return (dispatch) => {
     getRecommendListRequest().then(data => {
       dispatch(changeRecommendList(data.result))
+      dispatch(changeEnterLoading(false))
     }).catch(() =>{
       console.log("推荐数据传输错误")
     })
   }
 }
+

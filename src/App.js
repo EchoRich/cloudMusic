@@ -6,6 +6,7 @@ import routes from  './routes/index'
 import {HashRouter} from  'react-router-dom'
 import { renderRoutes } from 'react-router-config';
 import store from  './store/index'
+import  {Data} from  './application/Singer/data'
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
        <HashRouter>
       <GlobalStyle></GlobalStyle>
       <IconStyle></IconStyle>
+      <Data>
       {renderRoutes(routes)}
+      </Data>
      </HashRouter>
      </Provider>
     </div>

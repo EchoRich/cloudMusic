@@ -1,5 +1,10 @@
 import {combineReducers}   from  'redux-immutable'
 import {reducer as recommendReducer} from  '../application/Recommend/store/index'
+import {reducer as singerReducer} from '../application/Singer/store'
+import {reducer as rankReducer} from  '../application/Rank/store'
+
 export default combineReducers({
-  recommend: recommendReducer
+  recommend: recommendReducer,
+  singers: singerReducer,
+  rank: rankReducer
 })
